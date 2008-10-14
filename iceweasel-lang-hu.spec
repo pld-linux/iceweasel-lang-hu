@@ -40,7 +40,7 @@ sed -e 's@chrome/%{_lang}\.jar@%{_lang}.jar@' $RPM_BUILD_ROOT%{_libdir}/chrome.m
 mv -f $RPM_BUILD_ROOT%{_libdir}/*.rdf $RPM_BUILD_ROOT%{_iceweaseldir}/defaults/profile
 # rebrand locale for iceweasel
 cd $RPM_BUILD_ROOT%{_chromedir}
-unzip de.jar locale/branding/brand.dtd locale/branding/brand.properties \
+unzip hu.jar locale/branding/brand.dtd locale/branding/brand.properties \
 	locale/browser/appstrings.properties locale/browser/aboutDialog.dtd
 sed -i -e 's/Mozilla Firefox/Iceweasel/g; s/Firefox/Iceweasel/g;' \
 	locale/branding/brand.dtd locale/branding/brand.properties
@@ -50,7 +50,7 @@ grep -e '\<ENTITY' locale/browser/aboutDialog.dtd \
 sed -i -e '/copyrightInfo/s/^\(.*\)\..*Firefox.*/\1\./g; s/\r//g; /copyrightInfo/s/$/" >/g;' \
 	locale/browser/aboutDialog.dtd.new
 mv -f locale/browser/aboutDialog.dtd.new locale/browser/aboutDialog.dtd
-zip -0 de.jar locale/branding/brand.dtd locale/branding/brand.properties \
+zip -0 hu.jar locale/branding/brand.dtd locale/branding/brand.properties \
 	locale/browser/appstrings.properties locale/browser/aboutDialog.dtd
 rm -f locale/branding/brand.dtd locale/branding/brand.properties \
 	locale/browser/appstrings.properties locale/browser/aboutDialog.dtd
