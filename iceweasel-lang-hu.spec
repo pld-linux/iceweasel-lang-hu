@@ -7,7 +7,7 @@ Release:	1
 License:	GPL
 Group:		I18n
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/%{_lang}.xpi
-# Source0-md5:	aabd4cf360a30fc537373f0f69dc397e
+# Source0-md5:	84e88c6663215ee2743fa842949892ea
 URL:		http://www.mozilla.org/
 BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
