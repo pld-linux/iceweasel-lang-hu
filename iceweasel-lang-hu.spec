@@ -3,12 +3,12 @@ Summary:	Hungarian resources for Iceweasel
 Summary(hu.UTF-8):	Magyar nyelv Iceweasel-hez
 Summary(pl.UTF-8):	Węgierskie pliki językowe dla Iceweasela
 Name:		iceweasel-lang-%{_lang}
-Version:	3.0.5
+Version:	3.0.6
 Release:	1
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/%{_lang}.xpi
-# Source0-md5:	6b6b56d306f2bfbd2eaff383d76bb1f9
+# Source0-md5:	0ab477d742d0601af86d9610623a8434
 URL:		http://www.mozilla.org/
 BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
